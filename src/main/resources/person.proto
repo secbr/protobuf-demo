@@ -1,0 +1,10 @@
+syntax = "proto3"; // 声明为protobuf 3定义文件
+package tutorial;
+
+option java_package = "com.choupangxia.protobuf.message"; // 声明生成消息类的java包路径
+option java_outer_classname = "Person";  // 声明生成消息类的类名
+
+message PersonProto {
+    string name = 1;
+    int32 id = 2;
+}
